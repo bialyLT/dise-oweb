@@ -21,3 +21,9 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+def productos(request):
+    return render(request, 'productos/productos.html')
+
+def servicios(request):
+    return render(request, 'servicios/servicios.html')

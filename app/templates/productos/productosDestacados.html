@@ -1,13 +1,8 @@
-{% extends 'layouts/base.html' %}
-
-{% block title %}Inicio{% endblock %}
-
-{% block content %}
-
-<!-- Header Section -->
-{% include 'inicio/header.html' %}
-
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-2 p-4 justify-items-center">
+<section>
+    {% comment %} titulo de la seccion {% endcomment %}
+    <h1 class="text-3xl font-bold text-center mb-4">Productos Destacados</h1>
+    {% comment %} cards de productos destacados {% endcomment %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-4 justify-items-center">
         <div class="card bg-base-100 image-full w-96 shadow-sm">
             <figure>
             <img
@@ -18,7 +13,7 @@
             <h2 class="card-title">Productos</h2>
             <p>Observa todos los productos que ofrecemos</p>
             <div class="card-actions justify-end">
-                <a href="{% url 'productos' %}" class="btn btn-primary">Ver Más</a>
+                <button class="btn btn-primary">Ver Más</button>
             </div>
             </div>
         </div>
@@ -32,13 +27,9 @@
             <h2 class="card-title">Servicios</h2>
             <p>Observa todos los servicios que ofrecemos</p>
             <div class="card-actions justify-end">
-                <a href="{% url 'servicios' %}" class="btn btn-primary">Ver Más</a>
+                <button class="btn btn-primary">Ver Más</button>
             </div>
             </div>
         </div>
-    </section> 
-
-    {% include 'productos/productosDestacados.html' %}
-
-{% endblock %}
-
+    </div>
+</section>
