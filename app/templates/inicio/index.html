@@ -4,6 +4,8 @@
 
 {% block content %}
 
+<!-- Header Section -->
+{% include 'inicio/header.html' %}
     {% if user.is_authenticated %}
         <p>Hola, {{ user.username }}</p>
         <p>Perteneces al grupo de {{ user.groups.all|join:", " }}</p>

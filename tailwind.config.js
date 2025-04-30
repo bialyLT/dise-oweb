@@ -1,16 +1,11 @@
 module.exports = {
-  purge: {
-    enabled: false,
-    content: ['./app/templates/**/*.html'],
-  },
-  darkMode: false,
+  content: ['./app/templates/**/*.html'], // en vez de 'purge'
+  darkMode: 'class', // DaisyUI lo necesita para aplicar temas
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['dark', 'light'],
   },
-  plugins: [
-    require('@tailwindcss/forms')
-  ],
-}
+};

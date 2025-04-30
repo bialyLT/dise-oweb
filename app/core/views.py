@@ -7,7 +7,7 @@ from django.contrib.auth.models import Group
 
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'inicio/index.html')
 
 def register(request):
     if request.method == 'POST':
