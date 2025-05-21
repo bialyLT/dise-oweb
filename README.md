@@ -30,7 +30,7 @@ El desarrollo se llevó a cabo aplicando la metodología **UWE**, centrada en el
 2. **Gestion de productos e inventario**
 3. **Gestion de ventas y clientes**
 
-> Se incluye la documentacion durante las iteraciones en la carpeta `documentacion/uwe`.
+> Se incluye la documentacion durante las iteraciones en la carpeta `documentacion`.
 
 ## 🚀 Instalación y Ejecución
 
@@ -68,5 +68,6 @@ python manage.py migrate
 .\app\tailwindcss.exe
 npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --watch
 
+// Con este comando ejecutamos
 python manage.py runserver
 ```
