@@ -65,6 +65,7 @@ python manage.py migrate
 
 ```bash
 // Esto dejamos ejecutando en otra consola para que funcione tailwind:
+.\app\tailwindcss.exe
 npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/output.css --watch
 
 python manage.py runserver

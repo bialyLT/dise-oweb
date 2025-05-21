@@ -8,3 +8,4 @@ venv
 staticfiles
 .env
 *.sqlite3
+app/tailwindcss.exe
