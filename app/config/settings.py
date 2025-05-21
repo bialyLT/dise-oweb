@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.core',
+    'app'
 ]
 
 MIDDLEWARE = [
@@ -119,7 +120,8 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Redirecciones de autenticacino de usuario
+# Redirecciones de autenticacion de usuario
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/dashboard'
 LOGOUT_REDIRECT_URL = '/login/'
+LOGIN_URL = '/login/'
